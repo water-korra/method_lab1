@@ -20,7 +20,17 @@ def solver(a, b, c):
                 print("There are 2 roots\nx1 = {},\nx2 = {}".format(result1,result2))
                 return result1 ,result2
 
-
+def textreader(file):
+    try:
+        with open(file) as f:
+            args = f.read()
+            nums = args.split("\s")
+            a = nums[0]
+            b = nums[1]
+            c = nums[2].replace("\\n", "")
+            print(a,b,c)
+    except:
+        print("Sorry file is not supported")
 
 
 while True:
@@ -29,6 +39,7 @@ while True:
         b = float(input('Enter b: '))  
         c = float(input('Enter c: '))  
         solver(a,b,c)
+        textreader('arguments.txt')
         break
     except ValueError:
         print("Error. Expected a valid real number, got {} instead".format("unfixed bag :("))

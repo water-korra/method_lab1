@@ -8,7 +8,7 @@ git clone https://github.com/water-korra/method_lab1.git
 2)
 ```
 cd solver
-python3 lab1inter.py
+python3 lab1inter\ .py
 ```
 3) enjoy :)
 

@@ -11,3 +11,7 @@ cd solver
 python3 lab1inter.py
 ```
 3) enjoy :)
+
+
+##### Reverted commit :
+```5083231b4e582fe2145dd4eba528ce1545a57e6f```
